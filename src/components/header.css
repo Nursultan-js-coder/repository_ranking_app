@@ -1,0 +1,40 @@
+header {
+  background-color: #37273a;
+  margin: 0;
+  height: 60px;
+  padding: 0;
+}
+
+.languages {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  justify-content: space-between;
+  padding: 0;
+  height: 100%;
+}
+.languages > li {
+  text-align: center;
+  list-style: none;
+  height: 100%;
+  color: #fff;
+}
+.languages > li > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #fff;
+  text-decoration: none;
+  color: yellow;
+}
+.languages > li > a:hover {
+  filter: grayscale(40%);
+  color: #fff;
+  background-color: #453149;
+}
+.languages > li > a > * {
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=header.css.map */

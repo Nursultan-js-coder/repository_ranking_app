@@ -1,0 +1,19 @@
+{
+  "languages": [
+    {
+      "name": "Python"
+    },
+    {
+      "name": "JavaScript"
+    },
+    {
+      "name": "C#"
+    },
+    {
+      "name": "C"
+    },
+    {
+      "name": "PHP"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+$bordeR:1px solid #333;
+$borderRadius:4px;
+.repos{
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+}
+img{
+  max-width:100%;
+}
+
+$text-primary: #605c5c;
+$text-secondary: #27325a;
+$text-light: #e5fcf6;
+$borderRadius: 8px;
+
+@mixin centerify() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @include centerify();
+}
+.mask {
+  height: 300px;
+  width: 300px;
+  background-color: rgba(170, 85, 85, 0.29);
+  @include centerify();
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(170, 85, 85, 0.5);
+  font-size: 1rem;
+  padding: 10px;
+  color: $text-primary;
+  display: grid;
+  justify-items: center;
+  border-radius: $borderRadius;
+  &__description {
+    font-size: 15px;
+    color: $text-secondary;
+  }
+  &__info {
+    display: grid;
+    grid-template-columns: 1fr 2fr 4fr;
+    width: 80%;
+    align-items: center;
+    justify-items: center;
+    gap: 5px;
+    span {
+      font-size: 0.75rem;
+    }
+  }
+  img.logo {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+  }
+  button {
+    background-color: #262d4e;
+    color: $text-light;
+    width: 158px;
+    height: 30px;
+    border-radius: $borderRadius;
+    border: 0;
+    outline: 0;
+  }
+}

@@ -1,0 +1,74 @@
+.repos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+img {
+  max-width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mask {
+  height: 300px;
+  width: 300px;
+  background-color: rgba(170, 85, 85, 0.29);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(170, 85, 85, 0.5);
+  font-size: 1rem;
+  padding: 10px;
+  color: #605c5c;
+  display: grid;
+  justify-items: center;
+  border-radius: 8px;
+}
+.card__description {
+  font-size: 15px;
+  color: #27325a;
+}
+.card__info {
+  display: grid;
+  grid-template-columns: 1fr 2fr 4fr;
+  width: 80%;
+  align-items: center;
+  justify-items: center;
+  gap: 5px;
+}
+.card__info span {
+  font-size: 0.75rem;
+}
+.card img.logo {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+}
+.card button {
+  background-color: #262d4e;
+  color: #e5fcf6;
+  width: 158px;
+  height: 30px;
+  border-radius: 8px;
+  border: 0;
+  outline: 0;
+}
+
+/*# sourceMappingURL=card.css.map */

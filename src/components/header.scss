@@ -1,0 +1,46 @@
+@import "../styles/utils.scss";
+
+$background-main: #37273a;
+$background-accent: #453149;
+$text-color-primary: #323131;
+
+header{
+  background-color: $background-main;
+  margin:0;
+  height:60px;
+  padding:0;
+
+}
+.languages{
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
+  justify-content:space-between;
+  padding:0;
+  height:100%;
+  &>li{
+    text-align:center;
+    list-style:none;
+    height:100%;
+    color:#fff;
+  &>a {
+    @include centerify();
+    height:100%;
+    color:#fff;
+    text-decoration: none;
+    color:yellow;
+    &:hover{
+      filter:grayscale(40%);
+      color:#fff;
+      background-color:$background-accent ;
+    }
+    & > * {
+      margin:0;
+      padding:0;
+    }
+
+  }
+
+  }
+}
+
+
